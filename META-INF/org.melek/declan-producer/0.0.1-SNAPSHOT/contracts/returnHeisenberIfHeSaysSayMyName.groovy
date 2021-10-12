@@ -7,7 +7,7 @@ Contract.make {
         method GET()
         url("/whoTheHellAreYou") {
             queryParameters {
-                parameter('youKnow', 'say-my-name')
+                parameter('name', 'say-my-name')
             }
         }
         headers {
