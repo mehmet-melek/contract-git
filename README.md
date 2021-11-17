@@ -1,6 +1,6 @@
 # Produce Contracts 
 
-Repo contains contract created for declan-producer app.
+Repo contains contract created for producer-warehouse app.
 App link : https://github.com/mehmet-melek/spring-cloud-contract-demo
 
 Note : Contracts prepared according to producer app functionality

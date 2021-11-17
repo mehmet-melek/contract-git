@@ -1,5 +1,3 @@
-package contracts.stock
-
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
