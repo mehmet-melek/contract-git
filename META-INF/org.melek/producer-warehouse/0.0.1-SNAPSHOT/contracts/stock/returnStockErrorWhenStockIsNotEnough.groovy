@@ -2,12 +2,13 @@ import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
 
-    description("if parameter contains 'say my name' return Heisenberg")
+    description("When stock is not enough should return stock error message")
     request {
         method GET()
-        url("/whoTheHellAreYou") {
+        url("/productReservation") {
             queryParameters {
-                parameter("youKnow", "some-dummy-words")
+                parameter('product', 'ABC')
+                parameter('quantity', 50)
             }
         }
         headers {
@@ -16,11 +17,10 @@ Contract.make {
     }
     response {
         status OK()
-        body("Who the hell are you!")
-        status(200)
+        body("Not enough products were found!")
+        status(404)
         headers {
             contentType(applicationJson())
         }
     }
 }
-

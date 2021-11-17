@@ -2,12 +2,13 @@ import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
 
-    description("if parameter contains 'say my name' return Heisenberg")
+    description("When product is not exist, should return product not found message")
     request {
         method GET()
-        url("/whoTheHellAreYou") {
+        url("/productReservation") {
             queryParameters {
-                parameter('youKnow', 'say-my-name')
+                parameter('product', 'InvalidProduct')
+                parameter('quantity', 20)
             }
         }
         headers {
@@ -16,11 +17,10 @@ Contract.make {
     }
     response {
         status OK()
-        body("Heisenberg")
-        status(200)
+        body("Product not found!")
+        status(404)
         headers {
             contentType(applicationJson())
         }
     }
 }
-
