@@ -1,0 +1,15 @@
+description: When product is not exist, should return product not found message
+request:
+  method: GET
+  url: /productReservation
+  queryParameters:
+    product: InvalidProduct
+    quantity: 20
+  headers:
+    Content-Type: application/json
+response:
+  status: 404
+  body:
+    message: Product not found!
+  headers:
+    Content-Type: application/json
