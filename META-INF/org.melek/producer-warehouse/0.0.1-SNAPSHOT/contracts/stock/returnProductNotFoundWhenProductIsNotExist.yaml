@@ -10,6 +10,7 @@ request:
 response:
   status: 404
   body:
-    message: "Product not found!"
+    message:
+      value: "Product not found!"
   headers:
     Content-Type: application/json
