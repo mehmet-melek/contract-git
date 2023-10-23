@@ -9,7 +9,6 @@ request:
     Content-Type: application/json
 response:
   status: 200
-  body:
-    value: "Products are reserved."
+  body: "Products are reserved."
   headers:
     Content-Type: application/json
