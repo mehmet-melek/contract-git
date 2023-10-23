@@ -1,0 +1,29 @@
+{
+  "id" : "7e3caf0c-3dd8-4b5f-9d18-bf5f051f9e89",
+  "request" : {
+    "urlPath" : "/productReservation",
+    "method" : "GET",
+    "headers" : {
+      "Content-Type" : {
+        "equalTo" : "application/json"
+      }
+    },
+    "queryParameters" : {
+      "product" : {
+        "equalTo" : "InvalidProduct"
+      },
+      "quantity" : {
+        "equalTo" : "20"
+      }
+    }
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "Product not found!",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "7e3caf0c-3dd8-4b5f-9d18-bf5f051f9e89"
+}

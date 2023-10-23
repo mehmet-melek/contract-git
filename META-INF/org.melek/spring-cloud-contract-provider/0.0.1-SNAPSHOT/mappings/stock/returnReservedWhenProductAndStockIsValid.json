@@ -1,0 +1,29 @@
+{
+  "id" : "de72ed40-4b2d-4f06-8faf-cff282542dcc",
+  "request" : {
+    "urlPath" : "/productReservation",
+    "method" : "GET",
+    "headers" : {
+      "Content-Type" : {
+        "equalTo" : "application/json"
+      }
+    },
+    "queryParameters" : {
+      "product" : {
+        "equalTo" : "ABC"
+      },
+      "quantity" : {
+        "equalTo" : "20"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "Products are reserved.",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "de72ed40-4b2d-4f06-8faf-cff282542dcc"
+}
