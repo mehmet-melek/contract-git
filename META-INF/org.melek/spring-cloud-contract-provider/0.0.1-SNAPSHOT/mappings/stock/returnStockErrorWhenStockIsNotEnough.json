@@ -1,5 +1,5 @@
 {
-  "id" : "c349c650-afb0-48ca-a4d0-7683bd26eb9a",
+  "id" : "d36fdfb0-1fe0-4e73-af0f-61a06f5368f0",
   "request" : {
     "urlPath" : "/productReservation",
     "method" : "GET",
@@ -25,5 +25,5 @@
     },
     "transformers" : [ "response-template", "spring-cloud-contract" ]
   },
-  "uuid" : "c349c650-afb0-48ca-a4d0-7683bd26eb9a"
+  "uuid" : "d36fdfb0-1fe0-4e73-af0f-61a06f5368f0"
 }
