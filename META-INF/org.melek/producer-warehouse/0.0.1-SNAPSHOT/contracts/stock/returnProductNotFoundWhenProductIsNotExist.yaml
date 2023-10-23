@@ -3,13 +3,13 @@ request:
   method: GET
   url: /productReservation
   queryParameters:
-    product: InvalidProduct
+    product: "InvalidProduct"
     quantity: 20
   headers:
     Content-Type: application/json
 response:
   status: 404
   body:
-    message: Product not found!
+    message: "Product not found!"
   headers:
     Content-Type: application/json

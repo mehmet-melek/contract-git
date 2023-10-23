@@ -3,13 +3,13 @@ request:
   method: GET
   url: /productReservation
   queryParameters:
-    product: ABC
+    product: "ABC"
     quantity: 50
   headers:
     Content-Type: application/json
 response:
   status: 404
   body:
-    message: Not enough products were found!
+    message: "Not enough products were found!"
   headers:
     Content-Type: application/json
