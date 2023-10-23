@@ -10,7 +10,6 @@ request:
 response:
   status: 404
   body:
-    message:
-      value: "Not enough products were found!"
+    value: "Not enough products were found!"
   headers:
     Content-Type: application/json
