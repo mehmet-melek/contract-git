@@ -1,0 +1,30 @@
+{
+  "title" : "returnStockErrorWhenStockIsNotEnough",
+  "provider":{
+   "groupId": "org.melek",
+   "artifactId":"spring-cloud-contract-provider"
+  },
+  "description": "When stock is not enough should return stock error message",
+  "consumers":
+    [
+      { "groupId": "org.melek", "artifactId": "spring-cloud-contract-consumer" }
+    ],
+  "request": {
+    "method": "GET",
+    "url": "/productReservation",
+    "queryParameters": {
+      "product": "ABC",
+      "quantity": 50
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "response": {
+    "status": 404,
+    "body": "Not enough products were founddddddd!",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
