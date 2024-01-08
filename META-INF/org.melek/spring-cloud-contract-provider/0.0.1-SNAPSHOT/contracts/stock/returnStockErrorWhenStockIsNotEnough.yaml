@@ -1,22 +1,21 @@
-contract:
-  id: 3
-  name: sample Contract 3
-  description: sample Contract description 3
-  status: ACTIVE
-  directory: temp
-  request:
-    method: GET
-    url: "/productReservation"
-    queryParameters:
-      product: InvalidProduct
-      quantity: 20
-    headers:
-      Content-Type: application/json
-  response:
-    status: 404
-    body: Product not found!
-    headers:
-      Content-Type: application/json
+id: 3
+name: sample Contract 3
+description: sample Contract description 3
+status: ACTIVE
+directory: temp
+request:
+  method: GET
+  url: /productReservation
+  queryParameters:
+    product: InvalidProduct
+    quantity: 20
+  headers:
+    Content-Type: application/json
+response:
+  status: 404
+  body: Product not found!
+  headers:
+    Content-Type: application/json
 branches:
   - name: DEV
 provider:
