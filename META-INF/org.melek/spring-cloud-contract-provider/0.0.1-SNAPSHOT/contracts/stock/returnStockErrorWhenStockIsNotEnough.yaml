@@ -1,21 +1,51 @@
 {
-  "description": "When stock is not enough should return stock error message",
-  "request": {
-    "method": "GET",
-    "url": "/productReservation",
-    "queryParameters": {
-      "product": "ABC",
-      "quantity": 50
+  "contract": {
+    "name": "sample Contract 3",
+    "description": "sample Contract description 3",
+    "status": "ACTIVE",
+    "directory": "temp",
+    "request": {
+      "method": "GET",
+      "url": "/productReservation",
+      "queryParameters": {
+        "product": "InvalidProduct",
+        "quantity": 20
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
     },
-    "headers": {
-      "Content-Type": "application/json"
+    "response": {
+      "status": 404,
+      "body": "Product not found!",
+      "headers": {
+        "Content-Type": "application/json"
+      }
     }
   },
-  "response": {
-    "status": 404,
-    "body": "Not enough products were found!",
-    "headers": {
-      "Content-Type": "application/json"
+  "branches": [
+    {
+      "name": "DEV"
+    },
+    {
+      "name": "TEST"
+    },
+    {
+      "name": "UAT"
     }
-  }
+  ],
+  "provider": {
+    "groupName": "com.example",
+    "artifactName": "provider1"
+  },
+  "consumers": [
+    {
+      "groupName": "com.example",
+      "artifactName": "consumer1"
+    },
+    {
+      "groupName": "com.example",
+      "artifactName": "consumer2"
+    }
+  ]
 }
