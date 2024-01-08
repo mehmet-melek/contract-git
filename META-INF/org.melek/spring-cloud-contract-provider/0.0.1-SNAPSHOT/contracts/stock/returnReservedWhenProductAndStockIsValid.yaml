@@ -1,49 +1,30 @@
-{
-  "contract": {
-    "id" : 2,
-    "name": "sample Contract 2",
-    "description": "sample Contract description 2",
-    "status": "ACTIVE",
-    "directory": "temp",
-    "request": {
-      "method": "GET",
-      "url": "/productReservation",
-      "queryParameters": {
-        "product": "InvalidProduct",
-        "quantity": 20
-      },
-      "headers": {
-        "Content-Type": "application/json"
-      }
-    },
-    "response": {
-      "status": 404,
-      "body": "Product not found!",
-      "headers": {
-        "Content-Type": "application/json"
-      }
-    }
-  },
-  "branches": [
-    {
-      "name": "DEV"
-    },
-    {
-      "name": "TEST"
-    }
-  ],
-  "provider": {
-    "groupName": "org.melek",
-    "artifactName": "spring-cloud-contract-provider"
-  },
-  "consumers": [
-    {
-      "groupName": "com.example",
-      "artifactName": "consumer1"
-    },
-    {
-      "groupName": "com.example",
-      "artifactName": "consumer2"
-    }
-  ]
-}
+contract:
+  id: 2
+  name: sample Contract 2
+  description: sample Contract description 2
+  status: ACTIVE
+  directory: temp
+  request:
+    method: GET
+    url: "/productReservation"
+    queryParameters:
+      product: InvalidProduct
+      quantity: 20
+    headers:
+      Content-Type: application/json
+  response:
+    status: 404
+    body: Product not found!
+    headers:
+      Content-Type: application/json
+branches:
+  - name: DEV
+  - name: TEST
+provider:
+  groupName: org.melek
+  artifactName: spring-cloud-contract-provider
+consumers:
+  - groupName: com.example
+    artifactName: consumer1
+  - groupName: com.example
+    artifactName: consumer2
