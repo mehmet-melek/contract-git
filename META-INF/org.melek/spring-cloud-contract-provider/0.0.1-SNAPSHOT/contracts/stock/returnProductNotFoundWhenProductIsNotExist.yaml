@@ -1,5 +1,6 @@
 {
   "contract": {
+    "id" : 1,
     "name": "sample Contract 1",
     "description": "sample Contract description 1",
     "status": "ACTIVE",
@@ -35,8 +36,8 @@
     }
   ],
   "provider": {
-    "groupName": "com.example",
-    "artifactName": "provider1"
+    "groupName": "org.melek",
+    "artifactName": "spring-cloud-contract-provider"
   },
   "consumers": [
     {
