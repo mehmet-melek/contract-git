@@ -1,0 +1,52 @@
+{
+  "ignored": true,
+  "name": "Return stock error when stock is not enough",
+  "description": "sample Contract description",
+  "request": {
+    "method": "GET",
+    "url": "/productReservation",
+    "queryParameters": {
+      "product": "valid product",
+      "quantity": 100
+    },
+    "cookies": {
+      "key1": "value1",
+      "key2": "value2"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "response": {
+    "status": 404,
+    "body": "not enough.",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "id": 1,
+  "status": "ACTIVE",
+  "directory": "stock",
+  "provider": {
+    "groupName": "org.melek",
+    "artifactName": "spring-cloud-contract-provider"
+  },
+  "branch": [
+    {
+      "name": "TEST"
+    },
+    {
+      "name": "DEV"
+    }
+  ],
+  "consumer": [
+    {
+      "groupName": "org.melek",
+      "artifactName": "spring-cloud-contract-consumer1"
+    },
+    {
+      "groupName": "org.melek",
+      "artifactName": "spring-cloud-contract-consumer2"
+    }
+  ]
+}
