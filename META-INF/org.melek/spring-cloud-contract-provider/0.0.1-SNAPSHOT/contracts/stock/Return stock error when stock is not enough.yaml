@@ -24,32 +24,34 @@
       "Content-Type": "application/json"
     }
   },
-  "id": 3,
-  "status": "ACTIVE",
-  "directory": "stock",
-  "provider": {
-    "groupName": "org.melek",
-    "artifactName": "spring-cloud-contract-provider"
-  },
-  "branch": [
-    {
-      "name": "TEST"
-    },
-    {
-      "name": "DEV"
-    },
-    {
-      "name": "UAT"
-    }
-  ],
-  "consumer": [
-    {
+  "metadata": {
+    "id": 3,
+    "directory": "stock",
+    "status": "ACTIVE",
+    "consumer": [
+      {
+        "groupName": "org.melek",
+        "artifactName": "spring-cloud-contract-consumer1"
+      },
+      {
+        "groupName": "org.melek",
+        "artifactName": "spring-cloud-contract-consumer2"
+      }
+    ],
+    "provider": {
       "groupName": "org.melek",
-      "artifactName": "spring-cloud-contract-consumer1"
+      "artifactName": "spring-cloud-contract-provider"
     },
-    {
-      "groupName": "org.melek",
-      "artifactName": "spring-cloud-contract-consumer2"
-    }
-  ]
+    "branch": [
+      {
+        "name": "UAT"
+      },
+      {
+        "name": "TEST"
+      },
+      {
+        "name": "DEV"
+      }
+    ]
+  }
 }
