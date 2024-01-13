@@ -1,5 +1,5 @@
 {
-  "ignored": true,
+  "ignored": false,
   "name": "Return product not found when product is not exist",
   "description": "sample Contract description",
   "request": {
@@ -30,22 +30,19 @@
     "status": "ACTIVE",
     "consumer": [
       {
-        "groupName": "org.melek",
-        "artifactName": "spring-cloud-contract-consumer2"
+        "groupId": "org.melek",
+        "artifactId": "spring-cloud-contract-consumer2"
       },
       {
-        "groupName": "org.melek",
-        "artifactName": "spring-cloud-contract-consumer1"
+        "groupId": "org.melek",
+        "artifactId": "spring-cloud-contract-consumer1"
       }
     ],
     "provider": {
-      "groupName": "org.melek",
-      "artifactName": "spring-cloud-contract-provider"
+      "groupId": "org.melek",
+      "artifactId": "spring-cloud-contract-provider"
     },
     "branch": [
-      {
-        "name": "DEV"
-      },
       {
         "name": "TEST"
       }
